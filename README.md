@@ -17,6 +17,11 @@ Dibuat menggunakan Flutter.
 
 ## How-to
 
+1. Install APK dari Releases Section
+2. Enjoy
+
+or
+
 You can build yourself :)
 
 ## Screenshots
