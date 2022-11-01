@@ -36,10 +36,17 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  root_access: ^1.0.4
   fluttertoast: ^8.1.1
-  process_run: ^0.12.3+2
-  root: ^2.0.4
+  android_intent_plus: ^3.1.5
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  android: true
+  adaptive_icon_background: "#000000"
+  image_path: "assets/ic_foreground.png"
+  adaptive_icon_foreground: "assets/ic_foreground.png"
+  min_sdk_android: 16 # android min sdk min:16, default 21
+  
 
 dev_dependencies:
   flutter_test:
@@ -50,7 +57,6 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -67,6 +73,9 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+  - assets/logo_clean.png
+  - assets/vakekok.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -90,6 +99,18 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+
+  fonts:
+  - family: MaisonNeue
+    fonts: 
+      - asset: assets/fonts/MaisonNeue-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/MaisonNeue-Black.ttf
+        weight: 800
+      - asset: assets/fonts/MaisonNeue-Book.ttf
+        weight: 400
+
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

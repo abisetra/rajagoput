@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rajagoput">
+    package="com.rajagoput.app">
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
     <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER"/>
    <application
-        android:label="rajagoput"
+        android:label="Raja Goput"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         
