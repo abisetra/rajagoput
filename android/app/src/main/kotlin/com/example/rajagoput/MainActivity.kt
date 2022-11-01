@@ -1,4 +1,4 @@
-package com.example.rajagoput
+package com.rajagoput.app
 
 import io.flutter.embedding.android.FlutterActivity
 
