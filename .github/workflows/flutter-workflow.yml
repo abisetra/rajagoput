@@ -1,6 +1,9 @@
 name: Flutter CI
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -20,7 +23,9 @@ jobs:
       - run: flutter format --set-exit-if-changed .
       - run: flutter analyze .
       - run: flutter build apk --split-per-abi
-      - uses: actions/upload-artifact@v1
+      - name: Push to Releases
+        uses: ncipollo/release-action@v1
         with:
-          name: release-apk
-          path: build/app/outputs/apk/release/
+          artifacts: "build/app/outputs/apk/release/*"
+          tag: v1.0.${{ github.run_number }}
+          token: ${{ secrets.TOKEN }}
