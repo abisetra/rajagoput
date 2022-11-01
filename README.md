@@ -5,7 +5,7 @@ Bypass Gojek Update Pop-Up in One-Click (No Root Required!)
 ## About
 
 <img src="assets/ic_foreground.png" align="left"
-width="100" hspace="10" vspace="10" style="border-radius:20%">
+width="200" hspace="10" vspace="10" style="border-radius:20%">
 
 Gojek mulai menghentikan penggunanya menggunakan versi aplikasi 4.54.2 kebawah. Pengguna Jasderdor tentu ketar-ketir dengan kebijakan baru inih xixi
 
