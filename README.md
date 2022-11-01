@@ -26,8 +26,8 @@ You can build yourself :)
 
 ## Contributors
 
-<a href="https://github.com/abisetra/rajagoput/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=abisetra/rajagoput" />
+<a href="https://github.com/elmaleek03/rajagoput/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=elmaleek03/rajagoput" />
 </a>
 
 
