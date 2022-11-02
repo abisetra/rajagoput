@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.only(left: 32, bottom: 12),
+                margin: EdgeInsets.only(left: 32, bottom: 12),
                 child: Text(
                   'Bypass your Gojek app',
                   style: TextStyle(
@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 32, right: 32, bottom: 22),
+                margin: EdgeInsets.only(left: 32, right: 32, bottom: 22),
                 child: Text(
                   'Gojek nyuruh kamu update biar gabisa pakek double voucher dan Gopay Coins! Tekan tombol dibawah untuk bypass',
                   style: TextStyle(
@@ -97,6 +97,52 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontSize: 14,
                     fontWeight: FontWeight.w400,
                   ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 32, right: 32, bottom: 22),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 8,
+                  vertical: 12,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.orange.withOpacity(0.2),
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.info_outlined,
+                      color: Colors.orange,
+                    ),
+                    SizedBox(width: 8),
+                    Expanded(
+                      child: RichText(
+                        text: TextSpan(
+                          style: TextStyle(
+                            color: Colors.orange,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                          ),
+                          text: 'Pastikan aplikasi Gojek kamu versi ',
+                          children: [
+                            TextSpan(
+                              text: '4.43 ',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              )
+                            ),
+                            TextSpan(
+                              text: 'kebawah!',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w400,
+                              )
+                            ),
+                          ]
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
