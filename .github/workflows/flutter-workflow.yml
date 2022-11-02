@@ -17,11 +17,11 @@ jobs:
         with:
           channel: 'beta'
       - name: Create the Keystore
-          env:
-            KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-          run: |
-            # import keystore from secrets
-            echo $KEYSTORE_BASE64 | base64 -d > $RUNNER_TEMP/my_production.keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+        run: |
+          # import keystore from secrets
+          echo $KEYSTORE_BASE64 | base64 -d > $RUNNER_TEMP/my_production.keystore
       - run: flutter pub get
       - run: flutter build apk --split-per-abi
       - name: Sign Android App Package
