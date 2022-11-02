@@ -64,19 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                padding: EdgeInsets.only(
-                  bottom: 22,
-                ),
-                child: Image.asset(
-                  'assets/vakekok.png',
-                  width: 280,
-                ),
+          Center(
+            child: Container(
+              padding: EdgeInsets.only(bottom: 22),
+              child: Image.asset(
+                'assets/vakekok.png',
+                width: 280,
               ),
-            ],
+            ),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -106,36 +101,32 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                padding: EdgeInsets.only(top: 8),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
-                    ),
+          Center(
+            child: Container(
+              padding: EdgeInsets.only(top: 8),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  onPressed: () {
-                    fixerV2();
-                  },
-                  child: Container(
-                    padding:
-                        EdgeInsets.only(left: 4, right: 4, top: 12, bottom: 12),
-                    child: Text(
-                      'BYPASS UPDATE',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16,
-                      ),
+                ),
+                onPressed: () {
+                  fixerV2();
+                },
+                child: Container(
+                  padding:
+                      EdgeInsets.only(left: 4, right: 4, top: 12, bottom: 12),
+                  child: Text(
+                    'BYPASS UPDATE',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16,
                     ),
                   ),
                 ),
               ),
-            ],
+            ),
           ),
         ],
       ),
