@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:android_intent_plus/android_intent.dart';
 import 'package:rajagoput/color_resources.dart';
+import 'package:rajagoput/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -130,15 +129,15 @@ class _MyHomePageState extends State<MyHomePage> {
                               text: '4.43 ',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                              )
+                              ),
                             ),
                             TextSpan(
                               text: 'kebawah!',
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
-                              )
+                              ),
                             ),
-                          ]
+                          ],
                         ),
                       ),
                     ),
@@ -148,27 +147,32 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
           Center(
-            child: Container(
-              padding: EdgeInsets.only(top: 8),
+            child: Padding(
+              padding: EdgeInsets.only(
+                left: 32,
+                right: 32,
+                top: 12,
+                bottom: 12,
+              ),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
+                  fixedSize: Size(
+                    MediaQuery.of(context).size.width,
+                    40,
+                  ),
                 ),
-                onPressed: () {
-                  fixerV2();
+                onPressed: () async {
+                  Services.bypass();
                 },
-                child: Container(
-                  padding:
-                      EdgeInsets.only(left: 4, right: 4, top: 12, bottom: 12),
-                  child: Text(
-                    'BYPASS UPDATE',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
-                      fontSize: 16,
-                    ),
+                child: Text(
+                  'BYPASS UPDATE',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
                   ),
                 ),
               ),
@@ -178,38 +182,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
-
-void fixerV2() async {
-  try {
-    AndroidIntent intent = AndroidIntent(
-      action: 'android.intent.action.RUN',
-      package: 'com.gojek.app',
-      componentName: 'com.gojek.app.home.HomeActivity',
-    );
-    await intent.launch();
-    toast();
-  } catch (e) {
-    toastError();
-  }
-}
-
-Future<void> toast() async {
-  Fluttertoast.showToast(
-    msg: "Selamat Makan <3",
-    toastLength: Toast.LENGTH_LONG,
-    gravity: ToastGravity.BOTTOM,
-    textColor: Colors.white,
-    fontSize: 14.0,
-  );
-}
-
-Future<void> toastError() async {
-  Fluttertoast.showToast(
-    msg: "App Gojek nya install dulu coeg!",
-    toastLength: Toast.LENGTH_LONG,
-    gravity: ToastGravity.BOTTOM,
-    textColor: Colors.white,
-    fontSize: 14.0,
-  );
 }
