@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Raja Goput',
       theme: ThemeData(
+        fontFamily: 'MaisonNeue',
         primarySwatch: Colors.green,
       ),
       home: const MyHomePage(title: 'Raja Goput'),
@@ -45,10 +46,10 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Text(
             "RAJA GOPUT",
             style: TextStyle(
-                color: ColorsResources.black1,
-                fontSize: 24,
-                fontFamily: 'MaisonNeue',
-                fontWeight: FontWeight.w800),
+              color: ColorsResources.black1,
+              fontSize: 24,
+              fontWeight: FontWeight.w800,
+            ),
           ),
         ),
         leading: Container(
@@ -86,10 +87,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(
                   'Bypass your Gojek app',
                   style: TextStyle(
-                      color: ColorsResources.black1,
-                      fontFamily: 'MaisonNeue',
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700),
+                    color: ColorsResources.black1,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
               Container(
@@ -97,10 +98,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text(
                   'Gojek nyuruh kamu update biar gabisa pakek double voucher dan Gopay Coins! Tekan tombol dibawah untuk bypass',
                   style: TextStyle(
-                      color: ColorsResources.primary_text_color,
-                      fontSize: 14,
-                      fontFamily: 'MaisonNeue',
-                      fontWeight: FontWeight.w400),
+                    color: ColorsResources.primary_text_color,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                  ),
                 ),
               ),
             ],
@@ -114,7 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
                   ),
                   onPressed: () {
                     fixerV2();
@@ -125,10 +127,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text(
                       'BYPASS UPDATE',
                       style: TextStyle(
-                          fontFamily: 'MaisonNeue',
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16),
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ),
@@ -157,18 +159,20 @@ void fixerV2() async {
 
 Future<void> toast() async {
   Fluttertoast.showToast(
-      msg: "Selamat Makan <3",
-      toastLength: Toast.LENGTH_LONG,
-      gravity: ToastGravity.BOTTOM,
-      textColor: Colors.white,
-      fontSize: 14.0);
+    msg: "Selamat Makan <3",
+    toastLength: Toast.LENGTH_LONG,
+    gravity: ToastGravity.BOTTOM,
+    textColor: Colors.white,
+    fontSize: 14.0,
+  );
 }
 
 Future<void> toastError() async {
   Fluttertoast.showToast(
-      msg: "App Gojek nya install dulu coeg!",
-      toastLength: Toast.LENGTH_LONG,
-      gravity: ToastGravity.BOTTOM,
-      textColor: Colors.white,
-      fontSize: 14.0);
+    msg: "App Gojek nya install dulu coeg!",
+    toastLength: Toast.LENGTH_LONG,
+    gravity: ToastGravity.BOTTOM,
+    textColor: Colors.white,
+    fontSize: 14.0,
+  );
 }
