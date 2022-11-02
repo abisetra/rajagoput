@@ -1,6 +1,6 @@
-# Raja Goput
+# Home Activity Launcher Shortcut
 
-Bypass Gojek Update Pop-Up in One-Click (No Root Required!)
+Home Activity Launcher Shortcut untuk Gojek (No Root Required!)
 
 ## About
 
