@@ -26,13 +26,14 @@ You can build yourself :)
 
 ## Screenshots
 
-<img src="readme/SS1.jpg" align="left" width="200" hspace="10" vspace="10">
+<img src="readme/SS1.png" align="left" width="200" hspace="10" vspace="10">
+<img src="readme/SS3.png" align="left" width="200" hspace="10" vspace="10">
 <img src="readme/SS2.jpg" align="center" width="200" hspace="10" vspace="10"> 
 
 ## Contributors
 
-<a href="https://github.com/elmaleek03/rajagoput/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=elmaleek03/rajagoput" />
+<a href="https://github.com/abisetra/rajagoput/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abisetra/rajagoput" />
 </a>
 
 

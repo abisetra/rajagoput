@@ -2,6 +2,7 @@
     package="com.rajagoput.app">
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
     <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
    <application
         android:label="Raja Goput"
         android:name="${applicationName}"

@@ -39,6 +39,8 @@ dependencies:
   fluttertoast: ^8.1.1
   android_intent_plus: ^3.1.5
   flutter_launcher_icons: ^0.10.0
+  device_apps: ^2.2.0
+  version: ^3.0.2
 
 flutter_icons:
   android: true
