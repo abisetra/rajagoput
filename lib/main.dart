@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           text: 'Pastikan aplikasi Gojek kamu versi ',
                           children: [
                             TextSpan(
-                              text: '4.43 ',
+                              text: '4.43.1 ',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                               ),
@@ -164,8 +164,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     40,
                   ),
                 ),
-                onPressed: () async {
-                  Services.bypass();
+                onPressed: () {
+                  Services.bypass(context);
                 },
                 child: Text(
                   'BYPASS UPDATE',
