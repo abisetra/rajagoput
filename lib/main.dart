@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Container(
-          padding: EdgeInsets.only(top: 4),
+          padding: EdgeInsets.only(top: 2),
           child: Text(
             "RAJA GOPUT",
             style: TextStyle(
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 margin: EdgeInsets.only(left: 32, right: 32, bottom: 22),
                 child: Text(
-                  'Gojek nyuruh kamu update biar gabisa pakek double voucher dan Gopay Coins! Tekan tombol dibawah untuk bypass',
+                  'Gojek nyuruh kamu update biar gabisa pakek double voucher dan Gopay Coins! Tekan tombol dibawah untuk bypass updatenya dan langsung masuk ke Homescreen!',
                   style: TextStyle(
                     color: ColorsResources.primary_text_color,
                     fontSize: 14,
@@ -121,6 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           style: TextStyle(
                             color: Colors.orange,
                             fontSize: 14,
+                            fontFamily: 'MaisonNeue',
                             fontWeight: FontWeight.w400,
                           ),
                           text: 'Pastikan aplikasi Gojek kamu versi ',
