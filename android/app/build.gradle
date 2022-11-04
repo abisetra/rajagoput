@@ -60,7 +60,7 @@ android {
             minifyEnabled = true
             shrinkResources true
 
-            signingConfig null
+            signingConfig signingConfigs.debug
         }
     }
 }
