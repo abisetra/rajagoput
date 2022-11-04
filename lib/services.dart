@@ -2,6 +2,7 @@ import 'package:android_intent_plus/android_intent.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:rajagoput/color_resources.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Services {
@@ -40,13 +41,62 @@ class Services {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('Peringatan!'),
-        content: Text(
-          'Aplikasi Gojek kamu diatas 4.43.1, pake versi 4.43.1 kebawah cok!',
+        title: Text(
+          'Hadeh',
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w700,
+            fontFamily: 'MaisonNeue',
+          ),
+        ),
+        content: RichText(
+          text: TextSpan(
+            style: TextStyle(
+              color: ColorsResources.primary_text_color,
+              fontSize: 16,
+              fontFamily: 'MaisonNeue',
+              fontWeight: FontWeight.w400,
+            ),
+            text:
+                'Terdeteksi aplikasi Gojek yang kamu install versinya diatas ',
+            children: [
+              TextSpan(
+                text: '4.43.1',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextSpan(
+                text: '! Install versi ',
+                style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '4.43.1 ',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextSpan(
+                text: 'kebawah cuy!',
+                style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ],
+          ),
         ),
         actions: [
           ElevatedButton(
-            child: Text('Download Gojek versi 4.43.1'),
+            child: Text(
+              'Download versi 4.43.1 Sekarang!',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                fontFamily: 'MaisonNeue',
+              ),
+            ),
             style: ElevatedButton.styleFrom(
               minimumSize: Size(
                 MediaQuery.of(context).size.width,
@@ -61,7 +111,7 @@ class Services {
                 mode: LaunchMode.externalApplication,
               );
             },
-          )
+          ),
         ],
       ),
     );
